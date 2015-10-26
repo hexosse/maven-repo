@@ -44,7 +44,6 @@
         <jdk.version>1.7</jdk.version>
         <spigot.version>LATEST</spigot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!--<maven.internal.repo>${project.basedir}/../maven-repo</maven.internal.repo>-->
         <maven.internal.repo>${project.build.directory}/maven-repo</maven.internal.repo>
         <github.global.server>github</github.global.server>
     </properties>
