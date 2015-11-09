@@ -3,10 +3,9 @@
   <groupId>com.github.hexosse</groupId>
   <artifactId>BasePlugin</artifactId>
   <versioning>
-    <release>0.3.4</release>
     <versions>
-      <version>0.3.4</version>
+      <version>0.3.5-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20151108221242</lastUpdated>
+    <lastUpdated>20151109085940</lastUpdated>
   </versioning>
 </metadata>
