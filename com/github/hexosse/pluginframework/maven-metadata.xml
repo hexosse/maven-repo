@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.hexosse</groupId>
+  <artifactId>pluginframework</artifactId>
+  <versioning>
+    <versions>
+      <version>0.3.6-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20160127141617</lastUpdated>
+  </versioning>
+</metadata>
