@@ -27,8 +27,12 @@
     <scm>
         <connection>scm:git:git://github.com/hexosse/GroundItem.git</connection>
         <developerConnection>scm:git:git@github.com:hexosse/GroundItem.git</developerConnection>
-        <url>https://github.com/hexosse/GroundItem</url>
+        <url>git@github.com:hexosse/GroundItem.git</url>
     </scm>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/hexosse/GroundItem/issues</url>
+    </issueManagement>
 
 
     <!-- Propriétés du projet -->
@@ -73,10 +77,6 @@
         <repository>
             <id>hexosse-repo</id>
             <url>https://raw.github.com/hexosse/maven-repo/master/</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </releases>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -94,18 +94,18 @@
             <version>${spigot.version}</version>
             <scope>provided</scope>
         </dependency>
-        <!--Bukkit API-->
-        <dependency>
+        <!-- Bukkit API -->
+        <!--<dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
             <version>${spigot.version}</version>
             <scope>provided</scope>
-        </dependency>
-        <!--hexosse BasePlugin-->
+        </dependency>-->
+        <!--hexosse PluginFramework -->
         <dependency>
             <groupId>com.github.hexosse</groupId>
-            <artifactId>BasePlugin</artifactId>
-            <version>0.3.5-SNAPSHOT</version>
+            <artifactId>pluginframework</artifactId>
+            <version>0.4.0</version>
             <scope>compile</scope>
         </dependency>
         <!--hexosse GitHubUpdater-->
@@ -150,7 +150,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5</version>
+                <version>3.5.1</version>
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
@@ -159,7 +159,7 @@
             </plugin>
 
             <!-- maven-source-plugin -->
-            <plugin>
+            <!-- <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>2.4</version>
@@ -171,10 +171,10 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
 
             <!-- maven-javadoc-plugin -->
-            <plugin>
+            <!-- <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.10.3</version>
@@ -186,7 +186,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
 
             <!-- maven-shade-plugin -->
             <plugin>
@@ -200,24 +200,18 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <artifactSet>
-                                <includes>
-                                    <!-- Force BasePlugin à être compris dans le .jar-->
-                                    <!-- <include>com.github.hexosse:BasePlugin</include>-->
-                                    <!-- Force GitHubUpdater à être compris dans le .jar-->
-                                    <!-- <include>com.github.hexosse:GitHubUpdater</include>-->
-                                </includes>
-                            </artifactSet>
                             <relocations>
                                 <relocation>
-                                    <pattern>com.github.hexosse.baseplugin</pattern>
-                                    <shadedPattern>com.github.hexosse.${project.artifactId}.baseplugin</shadedPattern>
+                                    <pattern>com.github.hexosse.pluginframework</pattern>
+                                    <shadedPattern>com.github.hexosse.${project.artifactId}.framework</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>com.github.hexosse.githubupdater</pattern>
-                                    <shadedPattern>com.github.hexosse.${project.artifactId}.githubupdater</shadedPattern>
+                                    <shadedPattern>com.github.hexosse.${project.artifactId}.updater</shadedPattern>
                                 </relocation>
                             </relocations>
+                            <!-- remove unnecessary stuff -->
+                            <minimizeJar>true</minimizeJar>
                             <!-- utterly useless artifact from shade 2.x -->
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                             <!-- Le fichier jar d'origine est renommé en original-XXXX.jar -->
@@ -240,6 +234,7 @@
                             <Version>${project.version}</Version>
                         </manifestEntries>
                     </archive>
+                    <!--<outputDirectory>../../Server/plugins</outputDirectory>-->
                 </configuration>
             </plugin>
 
