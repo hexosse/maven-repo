@@ -25,10 +25,11 @@
 
     <!-- scm -->
     <scm>
+        <url>http://github.com/hexosse/GroundItem</url>
         <connection>scm:git:git://github.com/hexosse/GroundItem.git</connection>
         <developerConnection>scm:git:git@github.com:hexosse/GroundItem.git</developerConnection>
-        <url>git@github.com:hexosse/GroundItem.git</url>
     </scm>
+
     <issueManagement>
         <system>GitHub</system>
         <url>https://github.com/hexosse/GroundItem/issues</url>
