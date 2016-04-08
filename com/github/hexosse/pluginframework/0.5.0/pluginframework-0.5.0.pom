@@ -41,10 +41,11 @@
 
     <!-- scm -->
     <scm>
+        <url>http://github.com/hexosse/PluginFramework</url>
         <connection>scm:git:git://github.com/hexosse/PluginFramework.git</connection>
         <developerConnection>scm:git:git@github.com:hexosse/PluginFramework.git</developerConnection>
-        <url>https://github.com/hexosse/PluginFramework</url>
     </scm>
+
     <issueManagement>
         <system>GitHub</system>
         <url>https://github.com/hexosse/PluginFramework/issues</url>
