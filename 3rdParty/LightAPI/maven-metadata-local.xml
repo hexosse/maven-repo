@@ -3,14 +3,15 @@
   <groupId>3rdParty</groupId>
   <artifactId>LightAPI</artifactId>
   <versioning>
-    <release>3.0.0</release>
+    <release>2.0.3</release>
     <versions>
       <version>1.3.1</version>
       <version>1.4.2</version>
       <version>2.0.1</version>
       <version>2.0.2</version>
       <version>3.0.0</version>
+      <version>2.0.3</version>
     </versions>
-    <lastUpdated>20160620115742</lastUpdated>
+    <lastUpdated>20160620132823</lastUpdated>
   </versioning>
 </metadata>
