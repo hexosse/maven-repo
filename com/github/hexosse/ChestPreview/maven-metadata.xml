@@ -3,10 +3,10 @@
   <groupId>com.github.hexosse</groupId>
   <artifactId>ChestPreview</artifactId>
   <versioning>
-    <release>1.1.8</release>
+    <release>1.1.9</release>
     <versions>
-      <version>1.1.8</version>
+      <version>1.1.9</version>
     </versions>
-    <lastUpdated>20160623200414</lastUpdated>
+    <lastUpdated>20160706203114</lastUpdated>
   </versioning>
 </metadata>
