@@ -138,14 +138,15 @@
         <dependency>
             <groupId>com.github.hexocraftapi.checkargs</groupId>
             <artifactId>annotation</artifactId>
-            <version>[1.0.0, )</version>
+            <version>1.0.0</version>
             <scope>compile</scope>
         </dependency>
         <!-- Dependency to CheckArgs processor -->
         <dependency>
             <groupId>com.github.hexocraftapi.checkargs</groupId>
             <artifactId>processor</artifactId>
-            <version>[1.0.0, )</version>
+            <version>1.0.0</version>
+            <scope>provided</scope>
             <optional>true</optional>
             <exclusions>
                 <exclusion>
@@ -161,12 +162,6 @@
     <build>
         <defaultGoal>clean install</defaultGoal>
         <sourceDirectory>src/main/java</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>src/main/resources/META-INF/</directory>
-                <targetPath>META-INF</targetPath>
-            </resource>
-        </resources>
         <finalName>${project.name}-${project.version}</finalName>
 
         <!-- Liste des plugins -->
