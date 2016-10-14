@@ -28,6 +28,7 @@
 
     <groupId>com.github.hexocraftapi.checkargs</groupId>
     <artifactId>processor</artifactId>
+    <version>${parent.version}</version>
 
     <!-- Mettre ici la liste des dépendances du projet -->
     <dependencies>
