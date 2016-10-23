@@ -22,10 +22,11 @@
 
     <groupId>com.github.hexocraftapi</groupId>
     <artifactId>reflection</artifactId>
+    <name>Reflection</name>
     <version>1.10.5</version>
     <packaging>jar</packaging>
     <description></description>
-    <url>https://github.com/HexoCraftApi/Reflection</url>
+    <url>https://github.com/HexoCraftApi/${project.name}</url>
 
 
     <!-- License -->
@@ -40,14 +41,14 @@
 
     <!-- scm -->
     <scm>
-        <url>http://github.com/HexoCraftApi/Reflection</url>
-        <connection>scm:git:git://github.com/HexoCraftApi/Reflection.git</connection>
-        <developerConnection>scm:git:git@github.com:HexoCraftApi/Reflection.git</developerConnection>
+        <url>http://github.com/HexoCraftApi/${project.name}</url>
+        <connection>scm:git:git://github.com/HexoCraftApi/${project.name}.git</connection>
+        <developerConnection>scm:git:git@github.com:HexoCraftApi/${project.name}.git</developerConnection>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/HexoCraftApi/Reflection/issues</url>
+        <url>https://github.com/HexoCraftApi/${project.name}/issues</url>
     </issueManagement>
 
 
