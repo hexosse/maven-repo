@@ -22,10 +22,11 @@
 
     <groupId>com.github.hexocraftapi</groupId>
     <artifactId>updater</artifactId>
+    <name>Updater</name>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <description>Updater for Bukkit, Spigot and GitHub</description>
-    <url>https://github.com/HexoCraftApi/Updater</url>
+    <url>https://github.com/HexoCraftApi/${project.name}</url>
 
 
     <!-- License -->
@@ -40,14 +41,14 @@
 
     <!-- scm -->
     <scm>
-        <url>http://github.com/HexoCraftApi/Updater</url>
-        <connection>scm:git:git://github.com/HexoCraftApi/Updater.git</connection>
-        <developerConnection>scm:git:git@github.com:HexoCraftApi/Updater.git</developerConnection>
+        <url>http://github.com/HexoCraftApi/${project.name}</url>
+        <connection>scm:git:git://github.com/HexoCraftApi/${project.name}.git</connection>
+        <developerConnection>scm:git:git@github.com:HexoCraftApi/${project.name}.git</developerConnection>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/HexoCraftApi/Updater/issues</url>
+        <url>https://github.com/HexoCraftApi/${project.name}/issues</url>
     </issueManagement>
 
 
@@ -119,7 +120,7 @@
     <build>
         <defaultGoal>clean install</defaultGoal>
         <sourceDirectory>src/main/java</sourceDirectory>
-        <finalName>${project.name}-${project.version}</finalName>
+        <finalName>${project.artifactId}-${project.version}</finalName>
 
         <!-- Liste des plugins -->
         <!-- http://mvnrepository.com/artifact/org.apache.maven.plugins -->
