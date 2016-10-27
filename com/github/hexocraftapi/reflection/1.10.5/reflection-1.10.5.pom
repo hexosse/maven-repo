@@ -111,7 +111,7 @@
     <build>
         <defaultGoal>clean install</defaultGoal>
         <sourceDirectory>src/main/java</sourceDirectory>
-        <finalName>${project.name}-${project.version}</finalName>
+        <finalName>${project.artifactId}-${project.version}</finalName>
 
         <!-- Liste des plugins -->
         <!-- http://mvnrepository.com/artifact/org.apache.maven.plugins -->
