@@ -33,7 +33,7 @@
   <build>
     <sourceDirectory>src/main/java</sourceDirectory>
     <defaultGoal>clean install</defaultGoal>
-    <finalName>${project.name}-${project.version}</finalName>
+    <finalName>${project.command}-${project.version}</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
