@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>3rdParty</groupId>
+  <artifactId>FastAsyncWorldEdit</artifactId>
+  <versioning>
+    <release>3.5.0-DEV</release>
+    <versions>
+      <version>3.5.0-DEV</version>
+    </versions>
+    <lastUpdated>20161120103805</lastUpdated>
+  </versioning>
+</metadata>
