@@ -216,7 +216,7 @@
     <dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>bukkit</artifactId>
-      <version>1.9.4-R0.1-SNAPSHOT</version>
+      <version>1.11-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -257,7 +257,7 @@
     <jdk.version>1.7</jdk.version>
     <github.global.server>github</github.global.server>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <bukkit.version>1.9.4-R0.1-SNAPSHOT</bukkit.version>
+    <bukkit.version>1.11-R0.1-SNAPSHOT</bukkit.version>
   </properties>
 </project>
 
