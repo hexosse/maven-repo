@@ -263,6 +263,10 @@
                     <groupId>com.github.hexocraftapi</groupId>
                     <artifactId>sounds</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>com.github.hexocraftapi</groupId>
+                    <artifactId>checkargs</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
         <!-- hexosse Updater -->
@@ -303,7 +307,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5.1</version>
+                <version>3.6.0</version>
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
@@ -421,6 +425,7 @@
                                     <excludes>
                                         <exclude>com/github/hexocraftapi/reflection/**</exclude>
                                         <exclude>com/github/hexocraftapi/sounds/**</exclude>
+                                        <exclude>com/github/hexocraftapi/checkargs/**</exclude>
                                     </excludes>
                                 </filter>
                             </filters>
