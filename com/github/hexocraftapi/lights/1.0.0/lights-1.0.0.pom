@@ -228,43 +228,16 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <author>true</author>
+                    <doctitle>${project.name} ${project.version} : ${project.description}</doctitle>
+                    <windowtitle>${project.name} ${project.version} : ${project.description}</windowtitle>
+                    <packagesheader>${project.url}</packagesheader>
+                    <quiet>true</quiet>
                     <includeDependencySources>true</includeDependencySources>
                     <dependencySourceIncludes>
                         <dependencySourceInclude>com.github.hexocraftapi:**</dependencySourceInclude>
                     </dependencySourceIncludes>
                 </configuration>
-            </plugin>
-
-            <!-- maven-shade-plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>2.4.3</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                        <configuration>
-                            <filters>
-                                <filter>
-                                    <artifact>com.github.hexocraftapi:util</artifact>
-                                    <excludes>
-                                        <exclude>com/github/hexocraftapi/reflection/**</exclude>
-                                    </excludes>
-                                </filter>
-                                <filter>
-                                    <artifact>com.github.hexocraftapi:nms</artifact>
-                                    <excludes>
-                                        <exclude>com/github/hexocraftapi/reflection/**</exclude>
-                                    </excludes>
-                                </filter>
-                            </filters>
-                            <createDependencyReducedPom>false</createDependencyReducedPom>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
 
             <!-- maven-jar-plugin -->
