@@ -118,7 +118,7 @@
             <version>${bukkit.version}</version>
             <scope>provided</scope>
         </dependency> -->
-        <!--hexosse Reflection-->
+        <!-- Reflection -->
         <dependency>
             <groupId>com.github.hexocraftapi</groupId>
             <artifactId>reflection</artifactId>
