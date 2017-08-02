@@ -141,6 +141,19 @@
             <version>[1.10.5,)</version>
             <scope>compile</scope>
         </dependency>
+        <!-- hexosse Nms -->
+        <dependency>
+            <groupId>com.github.hexocraftapi</groupId>
+            <artifactId>nms</artifactId>
+            <version>[1.0.0,)</version>
+            <scope>compile</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.github.hexocraftapi</groupId>
+                    <artifactId>reflection</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <!-- hexosse Util -->
         <dependency>
             <groupId>com.github.hexocraftapi</groupId>
@@ -152,18 +165,9 @@
                     <groupId>com.github.hexocraftapi</groupId>
                     <artifactId>reflection</artifactId>
                 </exclusion>
-            </exclusions>
-        </dependency>
-        <!-- hexosse Nms -->
-        <dependency>
-            <groupId>com.github.hexocraftapi</groupId>
-            <artifactId>nms</artifactId>
-            <version>[1.0.0,)</version>
-            <scope>compile</scope>
-            <exclusions>
                 <exclusion>
                     <groupId>com.github.hexocraftapi</groupId>
-                    <artifactId>reflection</artifactId>
+                    <artifactId>nms</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
