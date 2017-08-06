@@ -86,14 +86,35 @@
 
     <!-- Mettre ici la liste des dépendances du projet -->
     <dependencies>
-        <!-- Bukkit -->
+        <!-- Spigot-API -->
+        <!-- <dependency>
+             <groupId>org.spigotmc</groupId>
+             <artifactId>spigot-api</artifactId>
+             <version>${bukkit.version}</version>
+             <scope>provided</scope>
+         </dependency> -->
+        <!-- Spigot -->
+        <!-- <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>${bukkit.version}</version>
+            <scope>provided</scope>
+        </dependency> -->
+        <!-- bukkit -->
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
             <version>${bukkit.version}</version>
             <scope>provided</scope>
         </dependency>
-        <!--hexosse Reflection-->
+        <!-- Craftbukkit -->
+        <!-- <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>craftbukkit</artifactId>
+            <version>${bukkit.version}</version>
+            <scope>provided</scope>
+        </dependency> -->
+        <!-- hexosse Reflection -->
         <dependency>
             <groupId>com.github.hexocraftapi</groupId>
             <artifactId>reflection</artifactId>
@@ -137,7 +158,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.0</version>
+                <version>3.6.1</version>
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
