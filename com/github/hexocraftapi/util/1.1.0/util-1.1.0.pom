@@ -39,7 +39,7 @@
     <!-- Propriétés du projet -->
     <properties>
         <jdk.version>1.7</jdk.version>
-        <bukkit.version>1.12-R0.1-SNAPSHOT</bukkit.version>
+        <bukkit.version>1.12.2-R0.1-SNAPSHOT</bukkit.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <github.global.server>github</github.global.server>
     </properties>
@@ -158,7 +158,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.1</version>
+                <version>3.7.0</version>
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
