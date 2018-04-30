@@ -256,8 +256,6 @@
                     <repositoryName>maven-repo</repositoryName>
                     <!-- github username -->
                     <repositoryOwner>hexosse</repositoryOwner>
-                    <!-- github OAuth Token -->
-                    <oauth2Token>${env.GITHUB_OAUTH_TOKEN}</oauth2Token>
                 </configuration>
                 <executions>
                     <execution>
